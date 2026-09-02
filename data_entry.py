@@ -13,7 +13,7 @@ def get_date(prompt, allow_default = False):
         valid_date = datetime.strptime(date_str, date_format)
         return valid_date.strftime(date_format)
     except ValueError:
-        print("Invalid date format. Please enter the date in dd-mm--yyy format")
+        print("Invalid date format. Please enter the date in dd-mm-yyy format")
         return get_date(prompt, allow_default)
 
 
@@ -25,7 +25,7 @@ def get_amount():
         return amount
     except ValueError as e:
         print(e)
-        return get_amount
+        return get_amount()
 
 
 def get_category():
