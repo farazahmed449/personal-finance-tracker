@@ -1,0 +1,4 @@
+_pycache__/
+*.pyc
+finance_data.csv
+.venv/
